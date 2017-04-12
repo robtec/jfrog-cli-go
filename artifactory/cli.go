@@ -147,18 +147,22 @@ func getCommonFlags() []cli.Flag {
 		cli.StringFlag{
 			Name:  "url",
 			Usage: "[Optional] Artifactory URL.",
+			EnvVar: "ART_URL",
 		},
 		cli.StringFlag{
 			Name:  "user",
 			Usage: "[Optional] Artifactory username.",
+			EnvVar: "ART_USER",
 		},
 		cli.StringFlag{
 			Name:  "password",
 			Usage: "[Optional] Artifactory password.",
+			EnvVar: "ART_PASS",
 		},
 		cli.StringFlag{
 			Name:  "apikey",
 			Usage: "[Optional] Artifactory API key.",
+			EnvVar: "ART_API_KEY",
 		},
 		cli.StringFlag{
 			Name:  "ssh-key-path",
